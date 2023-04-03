@@ -35,8 +35,82 @@ img {
   height: auto;
 }
 
-/*--- end of reset ----*/
+/*---- end of reset ----*/
 
+/*---- Switch Dark/Light Mode ----*/
+
+.switch {
+  margin-top: 1rem;
+  background-color: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  gap: 5px;
+}
+
+.switch::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch span,
+.active span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+}
+
+.active {
+  margin-top: 1rem;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  gap: 5px;
+  background-color: orange;
+}
+.active::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: #f1f1f1;
+  right: 0;
+  top: 0;
+  left: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*---- End of Switch ----*/
+/*---- Dark Mode Template ----*/
+.dark {
+  background-color: transparent;
+}
+.light {
+  opacity: 1;
+}
+
+/*---- End of Dark Mode Template ----*/
 :root {
   --blanco: white;
   --gris-medio: #333333;

@@ -1,9 +1,35 @@
 import style from './styles/styles.module.css'
+import { SunIcon, MoonIcon } from './components/Icons'
+import { useState } from 'react'
+import { useTheme } from './context/ThemeProvider'
 
 function App () {
+  const { theme, toggleTheme } = useTheme()
+  const [darkMode, setDarkMode] = useState(false)
+
+  const isDarkModeOnSwitch = darkMode ? style.active : style.switch
+  const isDarkModeOnTemplate = darkMode ? style.dark : null
+
+  const handleSwitch = () => {
+    setDarkMode(!darkMode)
+    toggleTheme()
+  }
   return (
-    <>
-      <header>
+    <div>
+      <header className={theme}>
+        <div>
+          <button
+            className={isDarkModeOnSwitch}
+            onClick={() => handleSwitch()}
+          >
+            <span>
+              <SunIcon />
+            </span>
+            <span>
+              <MoonIcon />
+            </span>
+          </button>
+        </div>
         <img
           src='./assets/ivan.jpeg'
           alt='Foto de Ivan Telleria'
@@ -28,7 +54,7 @@ function App () {
         </nav>
       </header>
 
-      <main>
+      <main className={isDarkModeOnTemplate}>
         <section>
           <h2 className={style.header} id='acercaDe'>Acerca de</h2>
           <p className={style.intro}>
@@ -89,12 +115,12 @@ function App () {
                   </button>
                 </li>
                 <li className='project4-container' aria-hidden='true'>
-                  <button id='project4' className={style.project} tabindex='-1'>
+                  <button id='project4' className={style.project} tabIndex='-1'>
                     <img className={style.projectImg} src='./assets/project4.png' alt='Proyecto 4' />
                   </button>
                 </li>
                 <li className='project5-container' aria-hidden='true'>
-                  <button id='project1' className={style.project} tabindex='-1'>
+                  <button id='project1' className={style.project} tabIndex='-1'>
                     <img className={style.projectImg} src='./assets/project5.png' alt='Proyecto 5' />
                   </button>
                 </li>
@@ -105,7 +131,7 @@ function App () {
         </section>
       </main>
 
-      <footer className={style.contactSection}>
+      <footer className={[style.contactSection, isDarkModeOnTemplate]}>
         <h2 className={style.header} id='contacto'>Contacto</h2>
         <i className={style.intro} id='mensaje-guia'>Para mandarme un mensaje ✉, puedes usar el siguiente formulario 👇</i>
         <form className={style.formContainer}>
@@ -121,7 +147,7 @@ function App () {
               className={style.messageInput}
               aria-label='Mensaje'
               placeholder='Escribe un mensaje aqui...'
-              minlength='500'
+              minLength='500'
             /> <br />
           </div>
           <button className={style.sendButton}>Enviar</button>
@@ -138,11 +164,11 @@ function App () {
             title='Proyecto'
             className={style.modalProjectImage}
           />
-          <button tabindex='0' className={style.modalButton}>Cerrar</button>
+          <button tabIndex='0' className={style.modalButton}>Cerrar</button>
         </div>
       </div>
 
-    </>
+    </div>
   )
 }
 
