@@ -119,11 +119,24 @@ img {
   --secondary-font: "Open Sans", sans-serif;
   --shadow: rgba(0, 0, 0, 0.75);
   --verde: #7ac943;
+/*---- Modo Claro ----*/
+  --shadow-light-mode: 4px 8px 16px 0px rgba(0, 0, 0, 0.75);
+  --blanco-light-mode: #F5F5F5;
+  --gris-oscuro-light-mode: #252525;
+  --azul-light-mode: #0072C6;
+  --azul-claro-light-mode: #00BFFF;
+  --gris-light-mode: #A9A9A9;
+  --amarillo-light-mode: #FFD700;
+/*---- Moso Oscuro ---*/
+  --gris-oscuro-dark-mode: #2F2F2F;
+  --azul-dark-mode: #1E90FF;
+  --azul-claro-dark-mode: #87CEFA;
+  --gris-dark-mode: #808080;
 }
 
 body, header, section {
   align-items: center;
-  background-color: var(--gris-medio);
+  background-color: var(--blanco-light-mode);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -134,14 +147,14 @@ nav {
 }
 
 .header {
-  color: var(--blanco);
+  color: var(--gris-oscuro-light-mode);
   font-family: var(--main-font);
   font-size: 55px;
   margin-top: 16px;
 }
 
 .subtitle {
-  color: var(--verde);
+  color: var(--azul-light-mode);
   font-family: var(--secondary-font);
   font-size: 24px;
 }
@@ -149,15 +162,15 @@ nav {
 .headerImg {
   background: center / cover no-repeat;
   border-radius: 50%;
-  border: 1px solid var(--gris-oscuro);
-  box-shadow: 8px 16px 32px 0px var(--shadow);
+  border: 2px solid var(--gris-light-mode);
+  box-shadow: var(--shadow-light-mode);
   height: 300px;
   margin-top: 80px;
   width: 300px;
 }
 
 .navigation {
-  color: var(--blanco);
+  color: var(--gris-light-mode);
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -167,7 +180,7 @@ nav {
 
 .navItem a {
   text-decoration: none;
-  color: var(--blanco)
+  color: var(--gris-oscuro-light-mode)
 }
 
 .navItem {
@@ -182,13 +195,13 @@ nav {
 
 .navItem:hover,
 .navItem:hover a {
-  background-color: var(--verde);
+  background-color: var(--azul-claro-light-mode);
   color: #292929;
   cursor: pointer;
 }
 
 .navItem:focus-within {
-  background-color: var(--verde);
+  background-color: var(--azul-claro-light-mode);
 }
 
 .navItem a:focus {
@@ -199,7 +212,7 @@ nav {
 .intro {
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
-  color: #fff;
+  color: var(--gris-oscuro-light-mode);
 }
 
 .socialMedia {
@@ -212,7 +225,7 @@ nav {
 
 .socialMedia i {
   font-size: 1.9rem;
-  color: #70b83e;
+  color: var(--azul-light-mode);
 }
 
 .socialMedia li a {
@@ -240,12 +253,12 @@ nav {
 }
 
 .socialMedia li:focus-within {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--azul-claro-light-mode);
   padding: 8px;
 }
 
 .socialMedia p {
-  color: #fff;
+  color: var(--gris-oscuro-light-mode);
 }
 
 .carousel {
@@ -277,7 +290,7 @@ nav {
 }
 
 .projectContainer button:focus-within {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--azul-claro-light-mode);
 }
 
 .projectImg {
@@ -301,6 +314,8 @@ nav {
   height: 75px;
   transition: all 0.2s ease-in-out;
   width: 75px;
+  border: none;
+  background: none;
 }
 
 .arrow:hover {
@@ -308,19 +323,19 @@ nav {
 }
 
 .arrow:focus{
-  outline: 5px solid var(--verde);
+  outline: 5px solid var(--azul-claro-light-mode);
   border-radius: 999999px;
 }
 
 .arrowLeft {
-  background: center / contain no-repeat url(./images/play-button-left.png);
-  background-color: var(--verde);
+  background: center / contain no-repeat url(../../public/assets/play-button-left.png);
+  background-color: var(--azul-claro-light-mode);
   border-radius: 50%;
 }
 
 .arrowRight {
-  background: center / contain no-repeat url(./images/play-button-right.png);
-  background-color: var(--verde);
+  background: center / contain no-repeat url(../../public/assets/play-button-right.png);
+  background-color: var(--azul-claro-light-mode);
   border-radius: 50%;
 }
 
@@ -369,7 +384,7 @@ input, textarea {
 
 textarea:focus, 
 input:focus{
-  outline: 3px solid rgba(172, 255, 47, 0.582);
+  outline: 3px solid var(--azul-claro-light-mode);
   border-radius: 5px;
 
 }
@@ -377,7 +392,7 @@ input:focus{
 .sendButton,
 .modalButton {
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--azul-claro-light-mode);
   border-radius: 5px;
   color: var(--gris-oscuro);
   font-family: var(--secondary-font);
@@ -394,14 +409,14 @@ input:focus{
 .sendButton:focus,
 .modalButton:focus {
   border: 5px solid var(--gris-oscuro);
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--azul-claro-light-mode);
 }
 
 .notification {
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--azul-light-mode);
   border-radius: 5px;
-  box-shadow: 8px 16px 32px 0px var(--shadow);
+  box-shadow: var(--shadow);
   color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
@@ -414,7 +429,7 @@ input:focus{
 }
 
 #modal-header:focus {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--azul-claro-light-mode);
 }
 
 .modalContainer {
@@ -433,7 +448,7 @@ input:focus{
 
 .modal {
   align-items: center;
-  background-color: var(--gris-oscuro);
+  background-color: var(--blanco-light-mode);
   border-radius: 5px;
   border: 2px solid #000;
   display: flex;
@@ -447,7 +462,7 @@ input:focus{
 }
 
 .modalProjectImage {
-  background: center / cover no-repeat url(./images/project1.png);
+  background: center / cover no-repeat url(./assets/project1.png);
   border-radius: 5px;
   border: 2px solid #000;
   height: 400px;
