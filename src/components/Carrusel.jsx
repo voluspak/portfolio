@@ -1,58 +1,8 @@
 import style from '../styles/styles.module.css'
-import { useRef } from 'react'
-
-const LEFT_TAB_LIMITS = {
-  '-270': () => {
-    document.querySelector('.project5').setAttribute('tabindex', '-1')
-    document.querySelector('.project5-container').setAttribute('aria-hidden', true)
-    document.querySelector('.project2').removeAttribute('tabindex')
-    document.querySelector('.project2-container').removeAttribute('aria-hidden')
-  },
-  0: () => {
-    document.querySelector('.project4').setAttribute('tabindex', '-1')
-    document.querySelector('.project4-container').setAttribute('aria-hidden', true)
-    document.querySelector('.project1').removeAttribute('tabindex')
-    document.querySelector('.project1-container').removeAttribute('aria-hidden')
-  }
-}
-const RIGHT_TAB_LIMITS = {
-  '-270': () => {
-    document.querySelector('.project1').setAttribute('tabindex', '-1')
-    document.querySelector('.project1-container').setAttribute('aria-hidden', true)
-    document.querySelector('.project4').removeAttribute('tabindex')
-    document.querySelector('.project4-container').removeAttribute('aria-hidden')
-  },
-  '-540': () => {
-    document.querySelector('.project2').setAttribute('tabindex', '-1')
-    document.querySelector('.project2-container').setAttribute('aria-hidden', true)
-    document.querySelector('.project5').removeAttribute('tabindex')
-    document.querySelector('.project5-container').removeAttribute('aria-hdden')
-  }
-}
+import useCarrusel from '../hooks/useCarrusel'
 
 const Carrusel = () => {
-  const projectContainer = useRef()
-
-  const currentLeft = parseInt(window.getComputedStyle(projectContainer.current).getPropertyValue('margin-left'))
-  console.log(projectContainer.current)
-
-  function handleLeftArrow () {
-    if (currentLeft === 0) return
-
-    const newValue = currentLeft + 270
-    projectContainer.current.style.marginLeft = `${newValue}px`
-
-    return LEFT_TAB_LIMITS[newValue]
-  }
-
-  function handleRightArrow () {
-    if (currentLeft < -270) return
-
-    const newValue = currentLeft - 270 // 270 toma en cuenta el tamaño de la imagen mas sus margines
-    projectContainer.current.style.marginLeft = `${newValue}px`
-
-    return RIGHT_TAB_LIMITS[newValue]
-  }
+  const { handleLeftArrow, handleRightArrow, projectContainer } = useCarrusel()
 
   return (
     <section>
