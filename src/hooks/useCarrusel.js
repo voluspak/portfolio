@@ -20,8 +20,6 @@ const useCarrusel = () => {
     const newValue = currentLeft - 270 // 270 toma en cuenta el tamaño de la imagen mas sus margines
     projectContainer.current.style.marginLeft = `${newValue}px`
 
-    console.log(projectContainer.current.style.marginLeft)
-
     return RIGHT_TAB_LIMITS[newValue]
   }
 

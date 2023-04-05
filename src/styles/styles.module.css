@@ -180,14 +180,15 @@ nav {
 
 .navItem a {
   text-decoration: none;
-  color: var(--gris-oscuro-light-mode)
+  color: var(--gris-oscuro-light-mode);
 }
 
 .navItem {
   align-items: center;
   border-radius: 5px;
   display: flex;
-  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: bold;
   height: 30px;
   justify-content: center;
   width: 33%;
@@ -259,6 +260,7 @@ nav {
 
 .socialMedia p {
   color: var(--gris-oscuro-light-mode);
+  font-weight: bold;
 }
 
 .carousel {
@@ -363,7 +365,8 @@ nav {
 }
 
 .formContainer label {
-  color: #fff;
+  color: var(--gris-oscuro-light-mode);
+  font-weight: bold;
 }
 
 textarea {
