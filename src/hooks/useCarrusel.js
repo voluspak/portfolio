@@ -1,4 +1,4 @@
-import { RIGHT_TAB_LIMITS, LEFT_TAB_LIMITS } from '../services/tabLimits'
+import { RIGHT_TAB_LIMITS, LEFT_TAB_LIMITS } from '../services/constants'
 import { useRef, useEffect } from 'react'
 
 const useCarrusel = () => {

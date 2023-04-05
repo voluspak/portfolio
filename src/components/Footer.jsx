@@ -11,7 +11,7 @@ const Footer = () => {
         <span id='name-error' aria-live='assertive' />
 
         <label>Correo</label>
-        <input type='text' aria-label='Correo electronico' placeholder='c.garcia98@ejemplo.com' /> <br />
+        <input type='email' aria-label='Correo electronico' placeholder='c.garcia98@ejemplo.com' /> <br />
         <div>
           <label>Mensaje</label>
           <textarea

@@ -27,4 +27,27 @@ const RIGHT_TAB_LIMITS = {
   }
 }
 
-export { LEFT_TAB_LIMITS, RIGHT_TAB_LIMITS }
+const redesSociales = [
+  {
+    red: 'Instagram',
+    link: 'https://www.instagram.com/itelleria96/',
+    img: ''
+  },
+  {
+    red: 'Github',
+    link: 'https://github.com/voluspak',
+    img: './assets/github-logo.png'
+  },
+  {
+    red: 'LinkedIn',
+    link: 'https://www.linkedin/in/ivan-telleria',
+    img: './assets/linkedin.png'
+  },
+  {
+    red: 'Correo',
+    link: 'mailto:ivantelleria96@gmail.com?subject=Contacto&body=Hola! Te contacto desde tu portfolio',
+    img: ''
+  }
+]
+
+export { LEFT_TAB_LIMITS, RIGHT_TAB_LIMITS, redesSociales }
