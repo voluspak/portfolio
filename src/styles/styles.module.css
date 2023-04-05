@@ -341,7 +341,7 @@ nav {
 
 .contactSection {
   align-items: center;
-  background-color: var(--blanco);
+  background-color: var(--blanco-light-mode);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -413,19 +413,24 @@ input:focus{
 }
 
 .notification {
-  align-items: center;
-  background-color: var(--azul-light-mode);
-  border-radius: 5px;
-  box-shadow: var(--shadow);
-  color: var(--gris-oscuro);
-  display: flex;
+  text-align: center;
   font-family: var(--secondary-font);
+  border-radius: 5px;
   height: 50px;
-  justify-content: center;
+  width: 300px;
+  padding: 8px;
+  
   position: fixed;
   right: 24px;
   top: 24px;
-  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: var(--shadow);
+  color: var(--gris-oscuro);
+  background-color: var(--azul-claro-light-mode);
 }
 
 #modal-header:focus {
