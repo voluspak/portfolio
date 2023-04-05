@@ -1,5 +1,6 @@
 import style from '../styles/styles.module.css'
 import { redesSociales } from '../services/constants'
+
 const RedesSociales = () => {
   return (
     <ul className={style.socialMedia}>

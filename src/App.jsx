@@ -1,4 +1,3 @@
-import style from './styles/styles.module.css'
 // import { useState } from 'react'
 // import { useTheme } from './context/ThemeProvider'
 import Header from './components/Header'
@@ -21,8 +20,6 @@ function App () {
       <Main />
 
       <Footer />
-
-      <span className={style.notification} aria-live='assertive' />
 
       <Modal />
 
