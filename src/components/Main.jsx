@@ -12,7 +12,6 @@ const Main = () => {
           ¡Hola! ¿Buscas a alguien apasionado y dedicado al <b>desarrollo front end</b> y <b>accesibilidad</b>? 🔎
           <br />
           <br />
-          Soy Ivan, un venezolano que reside en España y estoy emocionado por mostrar lo que puedo hacer.
           Soy un exbarista profesional apasionado por la creación y el aprendizaje constante.
           Me he enfocado principalmente en el desarrollo front end, utilizando tecnologías como <b> React.js ⚛ </b>
           y en el backend con <b>Express.js</b> y <b>MongoDB</b> con <b>Mongoose</b>.

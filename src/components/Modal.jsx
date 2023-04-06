@@ -1,6 +1,7 @@
 import style from '../styles/styles.module.css'
 
-const Modal = () => {
+const Modal = ({ toggleModal, listenForEsc }) => {
+  console.log('me muestro')
   return (
     <div className={style.modalContainer}>
       <div className={style.modal}>
@@ -11,7 +12,7 @@ const Modal = () => {
           title='Proyecto'
           className={style.modalProjectImage}
         />
-        <button tabIndex='0' className={style.modalButton}>Cerrar</button>
+        <button onClick={() => toggleModal()} tabIndex='0' className={style.modalButton}>Cerrar</button>
       </div>
     </div>
   )

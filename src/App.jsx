@@ -3,7 +3,6 @@
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
-import Modal from './components/Modal'
 
 function App () {
   // const { theme, toggleTheme } = useTheme()
@@ -20,8 +19,6 @@ function App () {
       <Main />
 
       <Footer />
-
-      <Modal />
 
     </div>
   )

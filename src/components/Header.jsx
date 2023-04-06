@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <header>
       <div>
-        <button>
+        <button
+          aria-label='Modo Oscuro'
+        >
           <span>
             <SunIcon />
           </span>

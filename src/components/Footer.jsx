@@ -3,12 +3,14 @@ import style from '../styles/styles.module.css'
 import Notificacion from './Notificacion'
 
 const Footer = () => {
-  const { nombreError, correoError, mensajeError, showNotification, handleForm } = useContactForm()
+  const { state, showNotification, handleForm } = useContactForm()
 
   return (
     <footer className={[style.contactSection]}>
       <h2 className={style.header} id='contacto'>Contacto</h2>
-      <i className={style.intro} id='mensaje-guia'>Para mandarme un mensaje ✉, puedes usar el siguiente formulario 👇</i>
+      <i className={style.intro} id='mensaje-guia'>
+        Para mandarme un mensaje ✉, puedes usar el siguiente formulario 👇
+      </i>
 
       <form
         className={style.formContainer}
@@ -22,7 +24,7 @@ const Footer = () => {
           placeholder='Carlos Garcia'
         /> <br />
         <span className={style.error} aria-live='assertive'>
-          {nombreError}
+          {state}
         </span>
 
         <label>Correo</label>
@@ -33,7 +35,7 @@ const Footer = () => {
           placeholder='c.garcia98@ejemplo.com'
         /> <br />
         <span className={style.error} aria-live='assertive'>
-          {correoError}
+          {state}
         </span>
 
         <div>
@@ -45,7 +47,7 @@ const Footer = () => {
             placeholder='Escribe un mensaje aqui...'
           /> <br />
           <span className={style.error} aria-live='assertive'>
-            {mensajeError}
+            {state}
           </span>
         </div>
         <button className={style.sendButton}>Enviar</button>

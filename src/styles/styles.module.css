@@ -212,7 +212,6 @@ nav {
 
 .intro {
   margin: 24px 196px 0;
-  font-family: var(--secondary-font);
   color: var(--gris-oscuro-light-mode);
 }
 
@@ -444,10 +443,12 @@ input:focus{
   align-items: center;
   background-color: rgba(0, 0, 0, 0.527);
   backdrop-filter: blur(1px);
-  display: none;
+  display: flex;
   height: 100vh;
   justify-content: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   display: flex;
   justify-content: center;
