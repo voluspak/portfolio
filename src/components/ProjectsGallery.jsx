@@ -3,9 +3,11 @@ import style from '../styles/styles.module.css'
 
 const ProjectsGallery = () => {
   return (
-    <section>
+    <section className={style.projectGallery}>
       <h2 className={style.subHeader}>Galería de Proyectos</h2>
-      <ProjectCard />
+      <div>
+        <ProjectCard />
+      </div>
     </section>
   )
 }
