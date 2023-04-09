@@ -8,4 +8,8 @@
     height: 2.5rem;
     width: 2.5rem;
     fill: #0072c6;
-  }
+}
+
+.svgRedes:hover {
+    fill: #3186c4;
+}

@@ -1,13 +1,13 @@
 
 import style from '../styles/styles.module.css'
-import Carrusel from './Carrusel'
+import ProjectsGallery from './ProjectsGallery'
 import RedesSociales from './RedesSociales'
 
 const Main = () => {
   return (
     <main>
       <section>
-        <h2 className={style.header} id='acercaDe'>Acerca de</h2>
+        <h2 className={style.subHeader} id='acercaDe'>Acerca de</h2>
         <p className={style.intro}>
           ¡Hola! ¿Buscas a alguien apasionado y dedicado al <b>desarrollo front end</b> y <b>accesibilidad</b>? 🔎
           <br />
@@ -25,7 +25,7 @@ const Main = () => {
         <RedesSociales />
       </section>
 
-      <Carrusel />
+      <ProjectsGallery />
     </main>
   )
 }

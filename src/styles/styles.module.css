@@ -149,8 +149,15 @@ nav {
 .header {
   color: var(--gris-oscuro-light-mode);
   font-family: var(--main-font);
-  font-size: 55px;
-  margin-top: 16px;
+  font-size: 3.43rem;
+  margin-top: 1rem;
+}
+
+.subHeader {
+  color: var(--gris-oscuro-light-mode);
+  font-family: var(--main-font);
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
 .subtitle {
