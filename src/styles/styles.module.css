@@ -223,10 +223,6 @@ nav {
   width: 30%;
 }
 
-.socialMedia i {
-  font-size: 1.9rem;
-  color: var(--azul-light-mode);
-}
 
 .socialMedia li a {
   display: flex;

@@ -1,3 +1,5 @@
+import { Correo, Github, Instagram, LinkedIn } from '../components/Icons'
+
 const LEFT_TAB_LIMITS = {
   '-270': () => {
     document.querySelector('.project5').setAttribute('tabindex', '-1')
@@ -31,22 +33,22 @@ const redesSociales = [
   {
     red: 'Instagram',
     link: 'https://www.instagram.com/itelleria96/',
-    img: ''
+    img: <Instagram />
   },
   {
     red: 'Github',
     link: 'https://github.com/voluspak',
-    img: './assets/github-logo.png'
+    img: <Github />
   },
   {
     red: 'LinkedIn',
     link: 'https://www.linkedin/in/ivan-telleria',
-    img: './assets/linkedin.png'
+    img: <LinkedIn />
   },
   {
     red: 'Correo',
     link: 'mailto:ivantelleria96@gmail.com?subject=Contacto&body=Hola! Te contacto desde tu portfolio',
-    img: ''
+    img: <Correo />
   }
 ]
 

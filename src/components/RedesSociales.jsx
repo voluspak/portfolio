@@ -8,7 +8,7 @@ const RedesSociales = () => {
       {redesSociales.map(contacto => (
         <li key={contacto.red}>
           <a href={contacto.link} target='_blank' rel='noreferrer'>
-            <img src={contacto.img} alt={contacto.name} title={contacto.red} />
+            {contacto.img}
             <p>{contacto.red}</p>
           </a>
         </li>
