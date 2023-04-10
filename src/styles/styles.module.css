@@ -268,3 +268,11 @@ nav {
 .projectGallery {
   margin-bottom: 1.5rem;
 }
+
+.cardsContainer {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}

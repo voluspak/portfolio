@@ -15,7 +15,7 @@ export default function ProjectCard () {
           <CardMedia
             component='img'
             height='140'
-            image={img[0]}
+            image={img}
             alt={name}
           />
           <CardContent>
@@ -28,17 +28,17 @@ export default function ProjectCard () {
             <Typography variant='h6' component='h6'>
               Stack tecnológico
             </Typography>
-            <span className={style.languageIconsContainer}>
+            <ul className={style.languageIconsContainer}>
               {relatedIcons.map(icon => (
-                <div
+                <li
                   key={icon.language}
                   className={style.iconContainer}
                 >
-                  <div>{icon.component}</div>
+                  <>{icon.component}</>
                   <span>{icon.language}</span>
-                </div>
+                </li>
               ))}
-            </span>
+            </ul>
           </CardContent>
         </CardActionArea>
       </Card>

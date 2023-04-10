@@ -5,7 +5,7 @@ const ProjectsGallery = () => {
   return (
     <section className={style.projectGallery}>
       <h2 className={style.subHeader}>Galería de Proyectos</h2>
-      <div>
+      <div className={style.cardsContainer}>
         <ProjectCard />
       </div>
     </section>
