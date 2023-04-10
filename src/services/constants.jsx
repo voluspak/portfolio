@@ -1,4 +1,4 @@
-import { Correo, Github, Instagram, LinkedIn } from '../components/Icons'
+import { Correo, Github, Instagram, LinkedIn, MongoDBLogo, NodeLogo, ReactLogo } from '../components/Icons'
 
 const LEFT_TAB_LIMITS = {
   '-270': () => {
@@ -49,6 +49,31 @@ const redesSociales = [
     red: 'Correo',
     link: 'mailto:ivantelleria96@gmail.com?subject=Contacto&body=Hola! Te contacto desde tu portfolio',
     img: <Correo />
+  }
+]
+
+export const projects = [
+  {
+    name: 'Galipan pan APP',
+    link: 'https://galipan-pan-ivan-telleria.vercel.app/index.html',
+    img: ['./assets/Galipan/GalipanSitioWeb.png', './assets/Galipan/GalipanDeliveryAppScreen.png'],
+    description: `Sitio web con 4 páginas. Posee su propia App de delivery y API. La app tiene 
+      un sistema de autogestion que le facilita al dueño la actualización en tiempo real e incluso
+      gestionar su disponibilidad`,
+    relatedIcons: [
+      {
+        component: <ReactLogo />,
+        language: 'React.js'
+      },
+      {
+        component: <NodeLogo />,
+        language: 'Node.js'
+      },
+      {
+        component: <MongoDBLogo />,
+        language: 'MongoDB'
+      }
+    ]
   }
 ]
 
