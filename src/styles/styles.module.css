@@ -270,6 +270,7 @@ nav {
 }
 
 .cardsContainer {
+  margin-top: 1rem;
   width: 80%;
   display: flex;
   flex-flow: row wrap;
