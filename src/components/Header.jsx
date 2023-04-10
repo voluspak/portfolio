@@ -1,11 +1,11 @@
 import style from '../styles/styles.module.css'
-import { SunIcon, MoonIcon } from './Icons'
+// import { SunIcon, MoonIcon } from './Icons'
 
 const Header = () => {
   return (
     <header>
       <div>
-        <button
+        {/* <button
           aria-label='Modo Oscuro'
         >
           <span>
@@ -14,7 +14,7 @@ const Header = () => {
           <span>
             <MoonIcon />
           </span>
-        </button>
+        </button> */}
       </div>
       <img
         src='./assets/ivan.jpeg'
