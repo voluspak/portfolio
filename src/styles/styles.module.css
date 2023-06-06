@@ -37,80 +37,6 @@ img {
 
 /*---- end of reset ----*/
 
-/*---- Switch Dark/Light Mode ----*/
-
-.switch {
-  margin-top: 1rem;
-  background-color: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-  gap: 5px;
-}
-
-.switch::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background: #f1f1f1;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: .3s ease all;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.switch span,
-.active span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: block;
-  background: none;
-}
-
-.active {
-  margin-top: 1rem;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none;
-  gap: 5px;
-  background-color: orange;
-}
-.active::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background: #f1f1f1;
-  right: 0;
-  top: 0;
-  left: unset;
-  border-radius: 100px;
-  transition: .3s ease all;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-/*---- End of Switch ----*/
-/*---- Dark Mode Template ----*/
-.dark {
-  background-color: transparent;
-}
-.light {
-  opacity: 1;
-}
-
-/*---- End of Dark Mode Template ----*/
 :root {
   --blanco: white;
   --gris-medio: #333333;
@@ -276,4 +202,97 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  body, header, section {
+    width: 100vw;
+  }
+
+  .headerImg {
+    height: 400px;
+    width: 400px;
+  }
+
+  .header {
+    font-size: 5rem;
+  }
+  .subtitle {
+    font-size: 2.2rem;
+  }
+
+  .navigation {
+    width: 80%;
+  }
+
+  .navItem {
+    font-size: 1.5rem;
+  }
+
+  .subHeader {
+    font-size: 4.5rem;
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .socialMedia,
+  .intro {
+    font-size: 1.8rem;
+  }
+
+  .socialMedia {
+    gap: 2rem;
+  }
+
+  .cardsContainer {
+    flex-flow: column wrap;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .headerImg {
+    height: 250px;
+    width: 250px;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.35rem;
+  }
+
+  .navigation {
+    width: 100vw;
+  }
+
+  .navItem {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .subHeader {
+    font-size: 2.8rem;
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .socialMedia,
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .socialMedia {
+    gap: 1rem;
+  }
+
+  .cardsContainer {
+    flex-flow: column wrap;
+    gap: 2rem;
+  }
 }

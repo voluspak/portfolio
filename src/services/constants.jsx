@@ -1,4 +1,9 @@
-import { Correo, ExpressLogo, Github, Instagram, LinkedIn, MongoDBLogo, NextLogo, NodeLogo, ReactLogo, TypescriptLogo } from '../components/Icons'
+import {
+  Correo, ExpressLogo, Github,
+  Instagram, Javascript, LinkedIn,
+  MongoDBLogo, NextLogo, NodeLogo,
+  ReactLogo, TypescriptLogo
+} from '../components/Icons'
 
 const LEFT_TAB_LIMITS = {
   '-270': () => {
@@ -119,7 +124,70 @@ export const projects = [
         language: 'Express.js'
       }
     ]
+  },
+  {
+    name: 'Tip Calculator',
+    link: 'https://tip-calculator-eight-gules.vercel.app/',
+    img: './assets/TipCalculator.png',
+    description: `Calculadora que computa la cantidad de propina a
+      proporcionar por persona y el monto total a pagar mas propina por persona.
+      Aplicación web estilo Mobile first diseñado con Tailwind`,
+    relatedIcons: [
+      {
+        component: <TypescriptLogo />,
+        language: 'Typescript'
+      },
+      {
+        component: <ReactLogo />,
+        language: 'React.js'
+      }
+    ]
+  },
+  {
+    name: 'Tik-tok Clone',
+    link: 'https://itelleria-itok.vercel.app/',
+    img: './assets/iTok.png',
+    description: `Clon de la interfaz de la app Tik-Tok version mobile
+    utilizando Intersectional Observer, la API TikTok All in One. Posee 
+    reproducción automática al deslizar. Estilos aplicados con Tailwind`,
+    relatedIcons: [
+      {
+        component: <TypescriptLogo />,
+        language: 'Typescript'
+      },
+      {
+        component: <NextLogo />,
+        language: 'React.js'
+      }
+    ]
+  },
+  {
+    name: 'Landing de Tesla',
+    link: 'https://landing-tesla-two.vercel.app/',
+    img: './assets/landingTesla.png',
+    description: `Clon de la landing page oficial de Tesla, utilizando el
+      Intersectional Observer. Estilado con Tailwind y desarrollado con el framework Astro`,
+    relatedIcons: [
+      {
+        component: <Javascript />,
+        language: 'Javascript'
+      }
+    ]
+  },
+  {
+    name: 'Age Calculator',
+    link: 'https://age-calculator-six-cyan.vercel.app/',
+    img: './assets/ageCalculator.png',
+    description: `Calculadora de edad que retorna cuantos
+      días, meses y años tienes de vida. App con diseño Mobile first 
+      con CSS Modules, con cambio de tema claro/oscuro según las 
+      preferencias del navegador del usuario`,
+    relatedIcons: [
+      {
+        component: <Javascript />,
+        language: 'Javascript'
+      }
+    ]
   }
 ]
-
 export { LEFT_TAB_LIMITS, RIGHT_TAB_LIMITS, redesSociales }

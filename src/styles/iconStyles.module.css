@@ -7,21 +7,18 @@
 .svgRedes {
     height: 2.5rem;
     width: 2.5rem;
-}
-
-.svgIcon {
-    height: 2rem;
-    width: 2rem;
-}
-
-.svgRedes {
     fill: #0072c6;
+
 }
 
 .svgRedes:hover {
     fill: #3186c4;
 }
 
+.svgIcon {
+    height: 2rem;
+    width: 2rem;
+}
 .languageIconsContainer {
     display: flex;
     width: 100%;
@@ -33,4 +30,17 @@
     text-align: center;
     width: 74px;
     height: 62px;
+}
+
+@media (max-width: 768px) {
+    .svgRedes {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+@media (max-width: 375px) {
+    .svgRedes {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
