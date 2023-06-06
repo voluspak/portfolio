@@ -4,18 +4,6 @@ import style from '../styles/styles.module.css'
 const Header = () => {
   return (
     <header>
-      <div>
-        {/* <button
-          aria-label='Modo Oscuro'
-        >
-          <span>
-            <SunIcon />
-          </span>
-          <span>
-            <MoonIcon />
-          </span>
-        </button> */}
-      </div>
       <img
         src='./assets/ivan.jpeg'
         alt='Foto de Ivan Telleria'

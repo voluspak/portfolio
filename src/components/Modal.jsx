@@ -1,6 +1,6 @@
 import style from '../styles/styles.module.css'
 
-const Modal = ({ toggleModal, listenForEsc }) => {
+const Modal = ({ toggleModal }) => {
   console.log('me muestro')
   return (
     <div className={style.modalContainer}>
